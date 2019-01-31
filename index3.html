@@ -10,9 +10,9 @@
    <script src="js/jquery-3.3.1.min.js"></script>
    <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
    <script src="js/bootstrap.min.js"></script>
-	 <style>
+	<style>
 		img{max-width: 100%;}
-		.header{color: white; padding-top: 30px; padding-bottom: 50px;}
+		.header{color: white; padding-top: 30px;}
 		.header h1{padding-top: 90px;}
 		.navbar-dark .navbar-nav .nav-link{color: black;}
 		.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus{color: black;}
@@ -29,12 +29,12 @@
 		.container > .row > .box4{background: url(images/chef-hat.png) center 20px no-repeat;}
 		.container > .row > .box5{background: url(images/pizza-2.png) center 20px no-repeat;}
 		.container > .row > .box6{background: url(images/contract.png) center 20px no-repeat;}
-		.container .row2 .centent2{margin-bottom: 30px;}
-		.container .row3{height:150px; background: url(images/new-side-bg.png) 0 0 no-repeat; background-size: cover;}
-		.col-sm-6.col-md-3.col-lg-3.box.content3{line-height: 150px; text-align: center;}
-		.col-sm-6.col-md-3.col-lg-3.box.content3 img{margin-left: 15px;}
+		.container > .row2 >.centent2{margin-bottom: 30px;}
+		.container > .row3{height:130px; background: url(images/new-side-bg.png) 0 0 no-repeat; background-size: cover;}
+		.container > .row3 > .content3{line-height: 130px; text-align: center;}
+		.container > .row3 > .content3 img{margin-left: 15px;}
 		.footer{background: #0d121b; text-align: center; padding: 30px 50px 100px 50px; color: #555d6d;}
-	 </style>
+	</style>
 </head>
 <body>
 	<div class="header">
@@ -135,7 +135,7 @@
 				<div class="col-6 col-md-4 centent2">
 					<a href="#"><img src="images/new-side-4.png" alt=""></a>
 				</div>
-				<div class="d-sm-none d-md-block col-md-4 centent2">
+				<div class="d-none d-sm-none d-md-block col-md-4 centent2">
 					<a href="#"><img src="images/new-side-5.png" alt=""></a>
 				</div>
 			</div>
@@ -143,34 +143,13 @@
 	</div>
 	<div class="container pl-0 pr-0 pt-3">
 		<div class="row row3">
-			<div class="col-sm-6 col-md-3 col-lg-3 box content3"><a href="#">고객만족센터<img src="images/new-side-icon1.png" alt=""></a></div>
-			<div class="col-sm-6 col-md-3 col-lg-3 box content3"><a href="#">매장안내<img src="images/new-side-icon2.png" alt=""></a></div>
-			<div class="col-sm-6 col-md-3 col-lg-3 box content3"><a href="#">상품권 안내<img src="images/new-side-icon3.png" alt=""></a></div>
-			<div class="col-sm-6 col-md-3 col-lg-3 box content3"><a href="#">피자헛 원칙<img src="images/new-side-icon4.png" alt=""></a></div>
+			<div class="col-6 col-sm-6 col-md-3 box content3"><a href="#">만족센터<img src="images/new-side-icon1.png" alt=""></a></div>
+			<div class="col-6 col-sm-6 col-md-3 box content3"><a href="#">매장안내<img src="images/new-side-icon2.png" alt=""></a></div>
+			<div class="d-none d-sm-none d-md-block col-md-3 box content3"><a href="#">상품권안내<img src="images/new-side-icon3.png" alt=""></a></div>
+			<div class="d-none d-sm-none d-md-block col-md-3 box content3"><a href="#">피자원칙<img src="images/new-side-icon4.png" alt=""></a></div>
 		</div>
 	</div>
-	<footer class="footer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, odit, ipsum deleniti magni enim ea consequuntur distinctio nemo deserunt aliquam.
+	<footer class="footer">
 	</footer>
-	<div class="modal fade" id="myModal">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h4 class="modal-title">Modal title</h4>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-						<span class="sr-only">Close</span>
-					</button>
-					
-				</div>
-				<div class="modal-body">
-					<p>One fine body&hellip;</p>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
-				</div>
-			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
 </body>
 </html>
