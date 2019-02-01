@@ -1,47 +1,26 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-   <title>title</title>
-   <link rel="stylesheet" href="css/bootstrap.min.css">
-   <link rel="stylesheet" href="css/animate.css">
-	 <link rel="stylesheet" href="css/reset.css">
-   <script src="js/jquery-3.3.1.min.js"></script>
-   <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
-   <script src="js/bootstrap.min.js"></script>
-	<style>
-		img{max-width: 100%;}
-		.header{color: white; padding-top: 30px;}
-		.header h1{padding-top: 90px;}
-		.navbar-dark .navbar-nav .nav-link{color: black;}
-		.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus{color: black;}
-		a#navbardrop:after{content:none}
-		.carousel {margin-top: 60px}
-		.bg-gray{background: #f5f5f5;}
-		.container > .row1{height: 150px; color: black; text-align: center; border: 1px solid #aaa;}
-		.container > .row > .content1{border-right: 1px solid #aaa;}
-		.container > .row > .content1:last-child{border-right: none;}
-		.container > .row > .content1 > a{display: block; padding-top: 105px;}
-		.container > .row > .box1{background: url(images/pizza.png) center 20px no-repeat;}
-		.container > .row > .box2{background: url(images/confetti.png) center 20px no-repeat;}
-		.container > .row > .box3{background: url(images/gift.png) center 20px no-repeat;}
-		.container > .row > .box4{background: url(images/chef-hat.png) center 20px no-repeat;}
-		.container > .row > .box5{background: url(images/pizza-2.png) center 20px no-repeat;}
-		.container > .row > .box6{background: url(images/contract.png) center 20px no-repeat;}
-		.container > .row2 >.centent2{margin-bottom: 30px;}
-		.container > .row3{height:130px; background: url(images/new-side-bg.png) 0 0 no-repeat; background-size: cover;}
-		.container > .row3 > .content3{line-height: 130px; text-align: center;}
-		.container > .row3 > .content3 img{margin-left: 15px;}
-		.footer{background: #000;}
-		.footer-w{max-width: 1170px;}
-		.footer-l img{width: 100px;}
-		footer-r{font-size: 13px;}
-	</style>
+  <meta charset="UTF-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>title</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="header">
 		<nav class="navbar navbar-expand-sm bg-white navbar-dark fixed-top pl-5 pr-5">
+			<div class="container pl-0 pr-0">
 				<a class="navbar-brand" href="#"><img src="images/main_logo.png" alt=""></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tmenu">
 					<span class="navbar-toggler-icon"></span>
@@ -81,16 +60,18 @@
 							</div>
 						</li>
 					</ul>
+				</div>
 			</div>
 		</nav>
-	<div class="container-flud p-0 m-0">
-		<div id="demo" class="carousel slide" data-ride="carousel">
-		<ul class="carousel-indicators">
-			<li data-target="#demo" data-slide-to="0" class="active"></li>
-			<li data-target="#demo" data-slide-to="1"></li>
-			<li data-target="#demo" data-slide-to="2"></li>
-			<li data-target="#demo" data-slide-to="3"></li>
-		</ul>
+	</div>
+		<div class="container-flud p-0 m-0">
+			<div id="demo" class="carousel slide" data-ride="carousel">
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+				<li data-target="#demo" data-slide-to="3"></li>
+			</ul>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<img src="images/pizza-1.png" alt="img01">
@@ -112,58 +93,48 @@
 				<span class="carousel-control-next-icon"></span>
 			</a>
 		</div>
-	</div>
-	<div class="container pr-0 pl-0">
-		<div class="row row1">
-			<div class="col-4 col-sm-4 col-md-3 col-lg-2 bg-white box1 content1"><a href="#">주문하기</a></div>
-			<div class="col-4 d-sm-block col-sm-4 col-md-3 col-lg-2 bg-white box2 content1"><a href="#">특가&amp;이벤트</a></div>
-			<div class="col-4 d-sm-block col-sm-4 col-md-3 col-lg-2 bg-white box3 content1"><a href="#">선물하기</a></div>
-			<div class="d-none d-sm-none d-md-block col-md-3 col-lg-2 bg-white box4 content1"><a href="#">내맘대로피자</a></div>
-			<div class="d-none d-sm-none d-md-none d-lg-block col-lg-2 bg-white box5 content1"><a href="#">단체주문</a></div>
-			<div class="d-none d-sm-none d-md-none d-lg-block col-lg-2 bg-white box6 content1"><a href="#">매장직원채용</a></div>
+		<div class="container pr-0 pl-0">
+			<div class="row row1">
+				<div class="col-4 col-sm-4 col-md-3 col-lg-2 bg-white box1 content1"><a href="#">주문하기</a></div>
+				<div class="col-4 d-sm-block col-sm-4 col-md-3 col-lg-2 bg-white box2 content1"><a href="#">특가&amp;이벤트</a></div>
+				<div class="col-4 d-sm-block col-sm-4 col-md-3 col-lg-2 bg-white box3 content1"><a href="#">선물하기</a></div>
+				<div class="d-none d-sm-none d-md-block col-md-3 col-lg-2 bg-white box4 content1"><a href="#">내맘대로피자</a></div>
+				<div class="d-none d-sm-none d-md-none d-lg-block col-lg-2 bg-white box5 content1"><a href="#">단체주문</a></div>
+				<div class="d-none d-sm-none d-md-none d-lg-block col-lg-2 bg-white box6 content1"><a href="#">매장직원채용</a></div>
+			</div>
 		</div>
-	</div>
-	<div class="pt-5"> 
-		<div class="container">
-			<div class="row row2">
-				<div class="col-md-6 centent2">
-					<a href="#"><img src="images/new-side-1.png" alt=""></a>
-				</div>
-				<div class="col-md-6 centent2">
-					<a href="#"><img src="images/new-side-2.png" alt=""></a>
-				</div>
-				<div class="col-6 col-md-4 centent2">
-					<a href="#"><img src="images/new-side-3.png" alt=""></a>
-				</div>
-				<div class="col-6 col-md-4 centent2">
-					<a href="#"><img src="images/new-side-4.png" alt=""></a>
-				</div>
-				<div class="d-none d-sm-none d-md-block col-md-4 centent2">
-					<a href="#"><img src="images/new-side-5.png" alt=""></a>
+		<div class="pt-5"> 
+			<div class="container">
+				<div class="row row2">
+					<div class="col-md-6 centent2"><a href="#"><img src="images/new-side-1.png" alt=""></a></div>
+					<div class="col-md-6 centent2"><a href="#"><img src="images/new-side-2.png" alt=""></a></div>
+					<div class="col-6 col-sm-6 col-md-4 centent2 box box7"><a href="#"></a></div>
+					<div class="col-6 col-sm-6 col-md-4 centent2 box box8"><a href="#"></a></div>
+					<div class="d-none d-sm-none d-md-block col-md-4 centent2 box box9"><a href="#"></a></div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container pl-0 pr-0 pt-3">
-		<div class="row row3">
-			<div class="col-6 col-sm-6 col-md-3 box content3"><a href="#">만족센터<img src="images/new-side-icon1.png" alt=""></a></div>
-			<div class="col-6 col-sm-6 col-md-3 box content3"><a href="#">매장안내<img src="images/new-side-icon2.png" alt=""></a></div>
-			<div class="d-none d-sm-none d-md-block col-md-3 box content3"><a href="#">상품권안내<img src="images/new-side-icon3.png" alt=""></a></div>
-			<div class="d-none d-sm-none d-md-block col-md-3 box content3"><a href="#">피자원칙<img src="images/new-side-icon4.png" alt=""></a></div>
+		<div class="container pl-0 pr-0 pt-3">
+			<div class="row row3">
+				<div class="col-6 col-sm-6 col-md-3 box content3"><a href="#">만족센터<img src="images/new-side-icon1.png" alt=""></a></div>
+				<div class="col-6 col-sm-6 col-md-3 box content3"><a href="#">매장안내<img src="images/new-side-icon2.png" alt=""></a></div>
+				<div class="d-none d-sm-none d-md-block col-md-3 box content3"><a href="#">상품권안내<img src="images/new-side-icon3.png" alt=""></a></div>
+				<div class="d-none d-sm-none d-md-block col-md-3 box content3"><a href="#">피자원칙<img src="images/new-side-icon4.png" alt=""></a></div>
+			</div>
 		</div>
-	</div>
 	<footer class="footer">
-	 <div class="container footer-w">
-		<div class="row">
-			<div class="footer-l col-3 d-none d-sm-none d-md-block">
-				<a class="navbar-brand p-4" href="#"><img src="images/footer_logo.jpg" alt=""></a>
-			</div>
-			<div class="footer-r pt-3 col-9 d-none d-sm-none d-md-block">
-				<address>서울시 영등포구 국회대로 74길 4, 9~11층<br>
-				사업자등록번호 120-81-63948<br>
-				한국피자헛유한회사 대표이사: 이 스티븐 크리스토퍼<br>
-				</address>
-				<p>Copyright &copy; BY PIZZA HUT KOREA LTD. ALL RIGHT RESERVED</p>
+		<div class="container footer-w">
+			<div class="row">
+				<div class="footer-l col-3 d-none d-sm-none d-md-block">
+					<a class="navbar-brand p-4" href="#"><img src="images/footer_logo.jpg" alt=""></a>
+				</div>
+				<div class="footer-r pt-3 col-9 d-none d-sm-none d-md-block">
+					<address>서울시 영등포구 국회대로 74길 4, 9~11층<br>
+					사업자등록번호 120-81-63948<br>
+					한국피자헛유한회사 대표이사: 이 스티븐 크리스토퍼<br>
+					</address>
+					<p>Copyright &copy; BY PIZZA HUT KOREA LTD. ALL RIGHT RESERVED</p>
+				</div>
 			</div>
 		</div>
 	</footer>
